@@ -30,7 +30,6 @@ interpolated_pm25 = idw_interpolation(
     grid_x, grid_y
 )
 
-# 可视化结果（可选）
 import matplotlib.pyplot as plt
 plt.contourf(grid_x, grid_y, interpolated_pm25, cmap='jet')
 plt.colorbar(label='PM2.5')
